@@ -1,1 +1,13 @@
 #+TITLE: Пример FastAPI службы Windows
+
+Пример web-сервиса, на базе FastAPI, собираемого в exe и устанавливаемого как служба Windows.\\
+Тестовое приложение генерирует uuid по входящему запросу на =/generate_uuid=\\
+
+Сборка в exe - =build.bat=
+
+Установка службы:
+#+begin_src shell
+  uuid-gen-svc install
+#+end_src
+
+Подробнее: https://nrukin.github.io/fastapi-win-svc.html
